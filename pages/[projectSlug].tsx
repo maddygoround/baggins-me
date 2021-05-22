@@ -19,7 +19,7 @@ interface PostProps {
   blocks: BlockMapType;
   post: Project;
   morePosts: Project[];
-  postViewCount: number;
+  // postViewCount: number;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

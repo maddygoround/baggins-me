@@ -2,7 +2,7 @@
   "alias": "baggins.me",
   "build": {
     "env": {
-      "GITHUB_TOKEN": "<GITHUB-TOKEN>"
+      "GITHUB_TOKEN": "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"
     }
   },
   "version": 2

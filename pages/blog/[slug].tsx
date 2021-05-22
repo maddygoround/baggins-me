@@ -18,7 +18,7 @@ import { getOpenGraphImage } from "../../core/og-image";
 interface PostProps {
   blocks: BlockMapType;
   post: Post;
-  postViewCount: number;
+  // postViewCount: number;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
