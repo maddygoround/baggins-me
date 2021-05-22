@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+
+
+# production
+/dist
+/tmp
+/public/content
+.next
+.vercel
+
+
+
+# misc
+.DS_Store
+.env*
+
+*.log
+
+.vercel

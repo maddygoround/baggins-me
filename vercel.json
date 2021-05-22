@@ -1,0 +1,9 @@
+{
+  "alias": "baggins.me",
+  "build": {
+    "env": {
+      "GITHUB_TOKEN": "<GITHUB-TOKEN>"
+    }
+  },
+  "version": 2
+}
