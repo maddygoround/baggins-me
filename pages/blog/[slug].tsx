@@ -18,7 +18,6 @@ import { getOpenGraphImage } from "../../core/og-image";
 interface PostProps {
   blocks: BlockMapType;
   post: Post;
-  // postViewCount: number;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -51,12 +50,10 @@ export const getStaticProps: GetStaticProps<
   }
 
   const blocks = await getPageBlocks(post.id);
-  // const postViewCount = await getPageViews(`/blog/${slug}`);
 
   return {
     props: {
       post,
-      // postViewCount,
       blocks,
     },
     revalidate: 10,
@@ -98,8 +95,6 @@ const BlogPost: React.FC<PostProps> = ({ post, blocks }) => {
           <time dateTime={new Date(post.date).toISOString()}>
             {dateFormatter.format(new Date(post.date))}
           </time>
-          {/* {" / "} */}
-          {/* <span>{postViewCount || "..."} Views</span> */}
           {" / "}
           <Link href="/work">
             <a className="text-blue-500">Work</a>

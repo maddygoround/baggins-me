@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { BlockMapType } from "react-notion";
 
 export const getBlogTable = async <T>(blogId: string): Promise<T[]> =>

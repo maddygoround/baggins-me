@@ -6,7 +6,7 @@ if (!githubToken) {
 
 export const config = {
   name: "Mahendra Rathod",
-  subtitle: "Code · Design · Film",
+  subtitle: "Code · Design · Sleep",
   birthday: "1989-04-16",
   githubUsername: "maddygoround",
   notionBlogTableId: "af2e2a2641004c60b05694cac92294dc",

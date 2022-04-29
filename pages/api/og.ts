@@ -2,7 +2,7 @@ import * as playwright from "playwright-aws-lambda";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const browser = await playwright.launchChromium();
+  const browser = await playwright.launchChromium({ ignoreDefaultArgs: ['--disable-extensions'] });
 
   const page = await browser.newPage({
     viewport: {
@@ -19,6 +19,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const data = await page.screenshot({
     type: "png",
   });
+
   await browser.close();
 
   res.setHeader("Cache-Control", "s-maxage=31536000, stale-while-revalidate");
