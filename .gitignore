@@ -14,7 +14,7 @@ vercel.json
 
 # misc
 .DS_Store
-.env*
+
 
 *.log
 
